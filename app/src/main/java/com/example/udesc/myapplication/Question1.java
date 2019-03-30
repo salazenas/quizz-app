@@ -6,21 +6,25 @@ import android.view.View;
 import android.content.Intent;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+import java.util.HashMap;
+
+public class Question1 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.question1);
     }
-
 
     public void inputAnswer (View v) {
         Button btnClicked = (Button)v;
         String getAnswer = btnClicked.getText().toString();
-        Intent checkAnswer = new Intent(this, RespostaTest.class);
-        checkAnswer.putExtra("answer", getAnswer);
-        startActivity(checkAnswer);
+        HashMap<String, String> setAnswer = new HashMap<String, String>();
+        setAnswer.put("resposta1", getAnswer);
+
+        Intent addAnswer = new Intent(this, Question2.class);
+        addAnswer.putExtra("resposta1", setAnswer);
+        startActivity(addAnswer);
     }
 
 }

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Question1">
 
     <Button
         android:id="@+id/opt3"
@@ -14,7 +14,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="25dp"
         android:onClick="inputAnswer"
-        android:text="Maria Joana"
+        android:text="Juca"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,17 +45,19 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Title"
         app:layout_constraintBottom_toTopOf="@+id/imageView10"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.123"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/imageView10"
-        android:layout_width="421dp"
+        android:layout_width="423dp"
         android:layout_height="312dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/vovojuju"
         tools:layout_editor_absoluteY="93dp" />

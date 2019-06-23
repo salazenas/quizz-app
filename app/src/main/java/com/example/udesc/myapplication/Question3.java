@@ -16,17 +16,17 @@ public class Question3 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.question2);
+        setContentView(R.layout.question3);
         Intent i = getIntent();
-        System.out.println(i.getExtras().get(("resposta1")));
+        answers = (HashMap) i.getExtras().get("answers");
     }
 
-    public void inputAnswer (View v) {
-        Button btnClicked = (Button)v;
+    public void inputAnswer(View v) {
+        Button btnClicked = (Button) v;
         String getAnswer = btnClicked.getText().toString();
         answers.put("resposta3", getAnswer);
 
-        Intent nextQuestion = new Intent(this, Question3.class);
+        Intent nextQuestion = new Intent(this, Result.class);
         nextQuestion.putExtra("answers", answers);
         startActivity(nextQuestion);
     }

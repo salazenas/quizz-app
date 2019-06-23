@@ -7,20 +7,95 @@
     tools:context=".Result">
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="303dp"
-        android:layout_height="56dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Quem é esse personagem do Irmão do Jorel?"
+        android:id="@+id/result"
+        android:layout_width="311dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="54dp"
+        android:paddingTop="40dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Title"
-        app:layout_constraintBottom_toTopOf="@+id/imageView10"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.123"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/retry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="149dp"
+        android:layout_marginEnd="174dp"
+        android:layout_marginBottom="80dp"
+        android:onClick="retry"
+        android:text="@string/tryAgainMsg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.323"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/first"
+        android:layout_width="248dp"
+        android:layout_height="272dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="82dp"
+        android:contentDescription="@string/winnerImg"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result"
+        app:layout_constraintVertical_bias="0.076"
+        app:srcCompat="@drawable/ouro" />
+
+    <ImageView
+        android:id="@+id/second"
+        android:layout_width="248dp"
+        android:layout_height="272dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="82dp"
+        android:contentDescription="@string/winnerImg"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result"
+        app:layout_constraintVertical_bias="0.076"
+        app:srcCompat="@drawable/prata" />
+
+    <ImageView
+        android:id="@+id/third"
+        android:layout_width="248dp"
+        android:layout_height="272dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="82dp"
+        android:contentDescription="@string/winnerImg"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result"
+        app:layout_constraintVertical_bias="0.076"
+        app:srcCompat="@drawable/bronze" />
+
+    <ImageView
+        android:id="@+id/noob"
+        android:layout_width="248dp"
+        android:layout_height="272dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="82dp"
+        android:contentDescription="@string/winnerImg"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/noob" />
 
 </android.support.constraint.ConstraintLayout>

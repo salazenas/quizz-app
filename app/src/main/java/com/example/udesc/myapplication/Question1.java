@@ -16,14 +16,14 @@ public class Question1 extends AppCompatActivity {
         setContentView(R.layout.question1);
     }
 
-    public void inputAnswer (View v) {
-        Button btnClicked = (Button)v;
+    public void inputAnswer(View v) {
+        Button btnClicked = (Button) v;
         String getAnswer = btnClicked.getText().toString();
-        HashMap<String, String> setAnswer = new HashMap<String, String>();
-        setAnswer.put("resposta1", getAnswer);
+        HashMap<String, String> answers = new HashMap<String, String>();
+        answers.put("resposta1", getAnswer);
 
         Intent addAnswer = new Intent(this, Question2.class);
-        addAnswer.putExtra("resposta1", setAnswer);
+        addAnswer.putExtra("answers", answers);
         startActivity(addAnswer);
     }
 

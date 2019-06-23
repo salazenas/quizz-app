@@ -18,11 +18,11 @@ public class Question2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.question2);
         Intent i = getIntent();
-        System.out.println(i.getExtras().get(("resposta1")));
+        answers = (HashMap) i.getExtras().get("answers");
     }
 
-    public void inputAnswer (View v) {
-        Button btnClicked = (Button)v;
+    public void inputAnswer(View v) {
+        Button btnClicked = (Button) v;
         String getAnswer = btnClicked.getText().toString();
         answers.put("resposta2", getAnswer);
 

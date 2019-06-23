@@ -1,38 +1,35 @@
 package com.example.udesc.myapplication;
 
 import com.example.udesc.myapplication.models.QuestionsInterface;
+
 import java.util.*;
 
 public class Questions implements QuestionsInterface {
 
-    String[] question1 = {"Vovó Juju", "Juca", "Mãe Dina","0"};
-    String[] question2 = {"Jorel", "Pocahontas","Tupã","0"};
-    String[] question3 = {"Ana Catarina", "Dafine", "Lindinha","0"};
+    String[] question1 = {"Vovó Juju", "Juca", "Mãe Dina"};
+    String[] question2 = {"Perdigoto", "Seu Edson", "William Shostners"};
+    String[] question3 = {"Samantha", "Jennifer", "Danuza"};
 
-    private Map<Integer, String[]> mapaNomes = new HashMap<Integer, String[]>();
+    private Map<Integer, String[]> mapaQuestoes = new HashMap<Integer, String[]>();
 
-    Questions () {
-        mapaNomes.put(1, question1);
-        mapaNomes.put(2, question2);
-        mapaNomes.put(3, question3);
+    Questions() {
+        mapaQuestoes.put(1, question1);
+        mapaQuestoes.put(2, question2);
+        mapaQuestoes.put(3, question3);
     }
 
     public String[] getQuestions(int questionId) {
-        return mapaNomes.get(questionId);
-    };
+        return mapaQuestoes.get(questionId);
+    }
 
     public Map<Integer, String[]> getAllQuestions() {
-        return mapaNomes;
+        return mapaQuestoes;
     }
 
     public String getAnswer(int questionId) {
 
-        String[] questions = mapaNomes.get(questionId);
+        String[] question = mapaQuestoes.get(questionId);
 
-        System.out.println(questions[Integer.valueOf(questions[questions.length -1])]);
-
-        return questions[Integer.valueOf(questions[questions.length -1])];
-    };
-
-
+        return question[0];
+    }
 }

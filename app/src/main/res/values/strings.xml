@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Quizz</string>
+    <string name="maeDinaOpt">Mãe Dina</string>
+    <string name="jucaOpt">Juca</string>
+    <string name="question1Lbl">Quem é esse personagem do Irmão do Jorel?</string>
+    <string name="vovoJujuOpt">Vovó Juju</string>
+    <string name="question1desc">q1Character</string>
+    <string name="seuEdsonOpt">Seu Edson</string>
+    <string name="perdigotoOpt">Perdigoto</string>
+    <string name="willShostnersOpt">William Shostners</string>
+    <string name="samanthaOpt">Samantha</string>
+    <string name="jenniferOpt">Jennifer</string>
+    <string name="danuzaOpt">Danuza</string>
+    <string name="tryAgainMsg">Jogar novamente</string>
+    <string name="winnerImg">Winner Image</string>
 </resources>
